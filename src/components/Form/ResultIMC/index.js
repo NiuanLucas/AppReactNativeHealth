@@ -1,5 +1,6 @@
 import React from "react"
 import { View, Text, TouchableOpacity, Share} from "react-native"
+import { FontAwesome } from '@expo/vector-icons'; 
 import styles from "./style";
 
 export default function ResultIMC(props){
@@ -14,18 +15,12 @@ export default function ResultIMC(props){
     return(
         <View styles={styles.resultIMC}>
             <View style={styles.boxSharebutton}>
-                {props.resultIMC != null ?
-                <TouchableOpacity  
-                onPress={onShare}
-                style={styles.shared}>
-                    <Text style={styles.sharedText}> Share </Text>
+                <Text style={styles.numberIMC}>{props.messageResultIMC}</Text> 
+                <Text style={styles.information}>{props.resultIMC}</Text> 
+                <TouchableOpacity  onPress={onShare} style={styles.shared}>
+                    <Text style={styles.sharedText}> Share <FontAwesome name="share" /></Text>
                 </TouchableOpacity>
-                :
-                <View></View>
-                }
             </View>
-            <Text style={styles.numberIMC}>{props.messageResultIMC}</Text> 
-            <Text style={styles.information}>{props.resultIMC}</Text> 
         </View>
 
     );

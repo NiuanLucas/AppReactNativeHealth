@@ -58,10 +58,32 @@ const styles = StyleSheet.create({
         color : "red",
         fontWeight: 'bold',
         paddingLeft: 20,
+    },
+
+    exhibitionResultIMC: {
+        width: "100%",
+        height: "50%",
+    },
+
+    listIMC: {
+        marginTop: 15,
+        flex : 1, 
+        flexGrow :1
+    },
+
+    resultIMCItem: {
+        fontSize: 28,
+        color: "#ff0043",
+        height: 50,
+        width: "100%",
+        paddingRight: 20,
+    },
+
+    textResultItemList: {
+        fontSize: 16,
+        color: "ff0043",
+
     }
-
-
-
 
    });
 

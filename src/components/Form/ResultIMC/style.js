@@ -13,21 +13,22 @@ const styles = StyleSheet.create({
 
     numberIMC: {
         marginTop: 18,
-        fontSize: 24,
+        fontSize: 28,
         color: "#FF0043",
         fontWeight: "bold",
     },
 
     information: {
-        fontSize: 18,
+        fontSize: 38,
         color: "#FF0043",
         textAlign: "center",
         fontWeight: "bold",
+        marginBottom: 10,
     },
 
     boxSharebutton: {
         width: "100%",
-        marginLeft: 30,
+        marginLeft: 0,
         marginBottom: 10,
         marginTop: 15,
         alignItems: "center",
